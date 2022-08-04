@@ -1,0 +1,7 @@
+# required by dev-texlive/texlive-xetex-2021-r1::gentoo
+# required by dev-texlive/texlive-formatsextra-2021::gentoo
+# required by app-text/texlive-2021::gentoo[-extra,xml]
+# required by texlive (argument)
+>=app-text/texlive-core-2021-r1 xetex
+
+>=app-text/texlive-2021 X png truetype xml -cjk -context extra -games graphics humanities -luatex -metapost -music -pstricks -publishers science -tex4ht -texi2html xetex

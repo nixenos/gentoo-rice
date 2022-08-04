@@ -1,0 +1,18 @@
+app-emulation/qemu static-user
+# required by app-emulation/qemu-7.0.0-r2::gentoo[-static,static-user]
+# required by @selected
+# required by @world (argument)
+>=dev-libs/glib-2.72.2 static-libs
+# required by app-emulation/qemu-7.0.0-r2::gentoo[-static,static-user]
+# required by @selected
+# required by @world (argument)
+>=sys-libs/zlib-1.2.12-r2 static-libs
+# required by app-emulation/qemu-7.0.0-r2::gentoo[-static,static-user,xattr]
+# required by @selected
+# required by @world (argument)
+>=sys-apps/attr-2.5.1-r1 static-libs
+# required by dev-libs/glib-2.72.2::gentoo
+# required by app-emulation/qemu-7.0.0-r2::gentoo[-static,static-user]
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libpcre-8.45-r1 static-libs
