@@ -1,0 +1,15 @@
+#!/bin/sh
+
+state="$(cat /proc/acpi/ibm/fan | grep level | awk -F' ' '{print $2}' | head -n 1)"
+
+echo $state
+
+if [ state="auto" ]; then
+	echo "level full-speed" > /proc/acpi/ibm/fan
+fi
+
+if [ state="disengaged" ]; then
+	echo "level auto" > /proc/acpi/ibm/fan
+fi
+
+echo "level auto" > /proc/acpi/ibm/fan
