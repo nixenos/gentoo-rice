@@ -161,7 +161,7 @@ echo "# vim:syntax=sh filetype=sh" >> make.conf
 
 echo -e "${Blue}make.conf ready! Please inspect manually, before emerging world${Color_Off}"
 
-cp ~/gentoo-rice/make.conf /mnt/gentoo/etc/portage/
+cp ~/gentoo-rice/make.conf /mnt/gentoo/etc/portage/make.conf
 mkdir /mnt/gentoo/etc/portage/package.use
 cp ~/gentoo-rice/configs/package.use/* /mnt/gentoo/etc/portage/package.use/
 
