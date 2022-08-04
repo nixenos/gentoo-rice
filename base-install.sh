@@ -161,9 +161,9 @@ echo "# vim:syntax=sh filetype=sh" >> make.conf
 
 echo -e "${Blue}make.conf ready! Please inspect manually, before emerging world${Color_Off}"
 
-cp make.conf /mnt/gentoo/etc/portage/
+cp ~/gentoo-rice/make.conf /mnt/gentoo/etc/portage/
 mkdir /mnt/gentoo/etc/portage/package.use
-cp ./configs/package.use/* /mnt/gentoo/etc/portage/package.use/
+cp ~/gentoo-rice/configs/package.use/* /mnt/gentoo/etc/portage/package.use/
 
 echo -e "Changing operating directory to /mnt/gentoo, unpacking stage3 tarball"
 cd /mnt/gentoo/
@@ -181,7 +181,7 @@ mount --make-rslave /mnt/gentoo/dev
 mount --bind /run /mnt/gentoo/run
 mount --make-slave /mnt/gentoo/run
 
-cp ./setup-base-install.sh /mnt/gentoo/
+cp ~/gentoo-rice/setup-base-install.sh /mnt/gentoo/
 
 echo -e "${BIRed}CHROOTING INTO NEW SYSTEM!${Color_Off}"
 chroot /mnt/gentoo /bin/bash
